@@ -1,0 +1,176 @@
+// Credit for animation https://codepen.io/webdevshorts/pen/xmGbBX
+
+.headerContent {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	color: #fff;
+	align-items: center;
+
+	&Text {
+		text-align: center;
+	}
+
+	h1 {
+		font-size: 7rem;
+		margin-bottom: 2rem;
+	}
+
+	p {
+		font-size: 3rem;
+	}
+
+	&Social {
+		position: absolute;
+		font-size: 3rem;
+		top:400px;
+		left: 0;
+		margin-left: 1rem;
+		
+
+		li {
+			margin-bottom: 2rem;
+		}
+
+		a {
+			color: #fff;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+
+			&:hover {
+				color: #b19cd9;
+			}
+		}
+	}
+}
+
+.animationArea {
+	background: #000;
+	width: 100%;
+	height: 100vh;
+	background: url(../img/space.png) no-repeat;
+}
+
+.starArea {
+	position: absolute;
+	top: 0;
+	right: 15%;
+	width: 100%;
+	height: 45%;
+	overflow: hidden;
+	transform: rotateZ(150deg);
+}
+
+.starArea li {
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	height: 2px;
+	background: linear-gradient(-45deg, #5f91ff, rgba(0, 0, 255, 0));
+	filter: drop-shadow(0 0 6px #699bff);
+	animation: tail 3000ms ease-in-out infinite,
+		shooting 3000ms ease-in-out infinite;
+}
+
+.starArea li::before,
+.starArea li::after {
+	position: absolute;
+	content: '';
+	top: 0;
+	right: 0;
+	height: 2px;
+	background: linear-gradient(
+		-45deg,
+		rgba(0, 0, 255, 0),
+		#5f91ff,
+		rgba(0, 0, 255, 0)
+	);
+	border-radius: 100%;
+	transform: translateX(50%) rotateZ(45deg);
+	animation: shining 3000ms ease-in-out infinite;
+}
+
+.starArea li::after {
+	transform: translateX(50%) rotateZ(-45deg);
+}
+
+.starArea li:nth-child(1)::before,
+.starArea li:nth-child(1)::after {
+	animation-delay: 650ms;
+}
+
+.starArea li:nth-child(2) {
+	top: 30%;
+	left: 25%;
+	animation-delay: 950ms;
+}
+.starArea li:nth-child(2)::before,
+.starArea li:nth-child(2)::after {
+	animation-delay: 950ms;
+}
+
+.starArea li:nth-child(3) {
+	top: 50%;
+	left: 10%;
+	animation-delay: 1600ms;
+}
+.starArea li:nth-child(3)::before,
+.starArea li:nth-child(3)::after {
+	animation-delay: 1600ms;
+}
+
+.starArea li:nth-child(4) {
+	top: 0;
+	left: 10%;
+	animation-delay: 4700ms;
+}
+.starArea li:nth-child(4)::before,
+.starArea li:nth-child(4)::after {
+	animation-delay: 4700ms;
+}
+
+.starArea li:nth-child(5) {
+	top: 40%;
+	left: 60%;
+	animation-delay: 2100ms;
+}
+.starArea li:nth-child(5)::before,
+.starArea li:nth-child(5)::after {
+	animation-delay: 2100ms;
+}
+
+/* Animations */
+@keyframes tail {
+	0% {
+		width: 0;
+	}
+
+	30% {
+		width: 100px;
+	}
+
+	100% {
+		width: 0;
+	}
+}
+
+@keyframes shining {
+	0% {
+		width: 0;
+	}
+	50% {
+		width: 30px;
+	}
+	100% {
+		width: 0;
+	}
+}
+
+@keyframes shooting {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(320px);
+	}
+}
