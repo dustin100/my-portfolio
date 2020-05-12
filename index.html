@@ -16,30 +16,17 @@
 
 
     <link rel="stylesheet" href="./styles/styles.css">
-    <title>Document</title>
+    <title>Dustin Kelly Portfolio</title>
 </head>
 
 <body>
     <header>
 
         <div class="headerContent wrapper">
-            <div class="nameText">
-                <h1><span>D</span>
-                    <span>u</span>
-                    <span>s</span>
-                    <span>t</span>
-                    <span>i</span>
-                    <span>n</span>
-                    <span>K</span>
-                    <span>e</span>
-                    <span>l</span>
-                    <span>l</span>
-                    <span>y</span>
-                </h1>
-            </div>
+            <img class="myName" src="./img/DustinKelly.png" alt="Dustin Kelly">
             <div>
-            <p class="tagline"><span>Frontend</span><span> Web</span> <span>Developer</span>
-                <span>being</span><span>creative</span><span>through</span> <span>code</span></p>
+                <p class="tagline"><span>Frontend</span><span> Web</span> <span>Developer</span>
+                    <span>being</span><span>creative</span><span>through</span> <span>code</span></p>
                 <button class="btn">Download résumé</button>
             </div>
             <div class="headerContentSocial">
@@ -47,36 +34,112 @@
                     <li><a href="https://www.linkedin.com/in/dustin-m-kelly/" target="_blank"> <i
                                 class="fab fa-linkedin"></i></a>
                     </li>
-                    <li><a href="https://github.com/dustin100"> <i class="fab fa-github" target="_blank"></i></a>
-                    </li>
-                    <li><a href="https://twitter.com/Dustin_Kelly_" target="_blank"><i class="fab fa-twitter">
-                            </i></a> </li>
+
                     <li><a href="mailto:dmkelly100@gmail.com" target="_blank"><i class="far fa-envelope">
                             </i></a> </li>
                 </ul>
             </div>
-            
+
         </div>
-
-        <main>
-            <div class="boxHeadings">
-                <h2>Projects</h2>
-            </div>
-
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quaerat quia labore sit amet optio hic numquam fuga ullam voluptatum ab sapiente, quasi dignissimos magnam saepe voluptatibus, nostrum velit cumque maxime eum. Doloremque est quaerat, nemo enim modi a, repellat, beatae et quo eaque quam hic repellendus molestiae itaque alias.</p>
-        </main>
-
-        
-
-
-
-
-
-
 
     </header>
 
+    <main>
+        <!-- Start of Project section -->
+        <div class="boxHeadings fullWidthWrapper">
+            <h2>Projects</h2>
+        </div>
+        <section class="project wrapper">
+
+            <div class="projectBox">
+                <h2>Mario Memory Game</h2>
+            </div>
+        </section>
+
+        <!-- start of About Me -->
+        <div class="boxHeadings fullWidthWrapper">
+            <h2>About Me</h2>
+        </div>
+        <section class="aboutMe wrapper">
+            <img src="./img/dustin-kelly.png" alt="dustin kelly in suit">
+            <p><span>Lorem</span>, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aspernatur, fugiat
+                rem totam error voluptatum officiis aliquam, tempora, ex illum quam deserunt animi veritatis! Asperiores
+                amet repellendus maxime quo dolorum iure quasi quia nulla voluptates! Consequuntur, unde nihil, magnam
+                dolorum mollitia eaque qui, molestiae incidunt temporibus ex ipsam voluptates? Sunt dicta incidunt sit.
+                Distinctio consequatur cumque at vero assumenda animi dignissimos tenetur consequuntur! Fuga sint odit
+                iste optio aspernatur ea, beatae tempora atque aut impedit, laboriosam excepturi nobis placeat quod
+                omnis provident eius ut adipisci facere numquam consectetur? Eius architecto porro nostrum eos fugit est
+                voluptas ipsum minima, possimus quos!</p>
+        </section>
+
+        <!-- Start of skills -->
+        <section class="skills wrapper">
+            <div class="skillsTitle">
+                <h2>Skills</h2>
+            </div>
+            <div class="skillsIcon">
+                <img src="./img/react.svg" alt="react icon">
+                <img src="./img/html5.svg" alt="html5 icon">
+                <img src="./img/css3.svg" alt="css3 icon">
+                <img src="./img/js.svg" alt="javascript icon">
+                <img src="./img/firebase.svg" alt="firebase icon">
+                <img src="./img/jquery.svg" alt="jquery icon">
+                <img src="./img/github.svg" alt="github icon">
+                <img src="./img/sass.svg" alt="sass icon">
+            </div>
+        </section>
+
+        <section class="myContact wrapper">
+                <h3>Contact</h3>
+
+            <div class="formWrap">
+
+                <form action="">
+
+                    <div class="myContactItem">
+                        <label class="visuallyHidden" for="name">First Name</label>
+                        <input class="myContactInput" type="text" id="name" name="name" placeholder="Name">
+                    </div>
+
+                    <div class="myContactItem">
+                        <label class="visuallyHidden" for="email">Email</label>
+                        <input class="myContactInput" id="email" name="email" placeholder="Email">
+                    </div>
+
+                    <div class="myContactItem">
+                        <label class="visuallyHidden" for="subject">Subject</label>
+                        <input class="myContactInput" id="subject" name="subject" placeholder="Subject">
+                    </div>
+
+                    <div class="myContactItem">
+                        <label class="visuallyHidden" for="msg">Message:</label>
+                        <textarea class="myContactInput" id="msg" name="user_message" placeholder="Your Message"></textarea>
+                    </div>
+                    <button class="btn myContactBtn" type="submit">Send</button>
+
+                </form>
+
+                
+            </div>
+            <div class="myContactSocial">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/dustin-m-kelly/" target="_blank"> <i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li><a href="https://github.com/dustin100" target="_blank"> <i class="fab fa-github"></i></a>
+                    </li>
+                    <li><a href="https://twitter.com/Dustin_Kelly_" target="_blank"> <i class="fab fa-twitter"></i></a>
+                    </li>
+        
+                </ul>
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+    <footer>Made by Dustin</footer>
 </body>
 
 </html>

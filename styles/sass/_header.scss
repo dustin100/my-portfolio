@@ -16,36 +16,23 @@ header {
 	text-align: center;
 	
 
-	h1 {
-		position: absolute;
-		top: 20px;
-		left: 0;
-		font-size: 3rem;
-		margin-bottom: 2rem;
-		border: 1px solid $mainColor;
-		width: 1em;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		text-align: center;
-		text-transform: uppercase;
-		color: $accentTwo;
-		letter-spacing: 1.2;
-		
 	
-		span:nth-child(6) {
-			border-bottom: 1px solid $mainColor;
-		}
+
+	.myName  {
+		height: 35rem;
+		position: absolute;
+		top: 2rem;
+		left: 0;
 	}
 
 .tagline  {
 	font-family: $h1Header;
-	font-size: 4rem;
+	font-size: 4.5rem;
 	text-align: center;
-	line-height: 5.2rem;
-	letter-spacing: -0.01em;
+	line-height: 5.8rem;
 	font-weight: normal;
 	margin-bottom: 2rem;
+	font-style: 400;
 
 	span {
 		display:block ;
