@@ -87,14 +87,29 @@ main {
 }
 
 form {
-width: 90%;
+	width: 80%;
 }
 
 .myContact {
-	
-	background: #222;
+	position: relative;
+	background: #1c1c28;
 	border: 1px solid $mainColor;
 	margin-bottom: 2rem;
+
+		&:before {
+	position:absolute; 
+	content:'';
+	right:-1px; top:-1px; 
+    border-top: 40px solid $mainColor;
+    border-left: 30px solid transparent;
+}
+:after {
+	position:absolute; 
+	 content:'';
+	 right:-2px; top:-2px;
+    border-top: 40px solid #000;
+    border-left: 30px solid transparent;
+}
 
 	h3 {
 		color: $accentTwo;
@@ -125,7 +140,10 @@ width: 90%;
 		line-height: 2.2rem;
 		letter-spacing: 0.01em;
 		width: 100%;
-		
+	}
+
+	textarea {
+		height: 15rem;
 	}
 
 	&Btn {
@@ -136,22 +154,121 @@ width: 90%;
 	&Social {
 		padding: 1.5rem;
 		border-top: 1px solid $mainColor;
-				
 
 		ul {
 			display: flex;
 			justify-content: space-around;
-
 		}
 
 		li {
 			font-size: 3rem;
 		}
-		
+
 		li a {
 			color: $lightColor;
 		}
-
 	}
-
 }
+
+.projectBox {
+	position: relative;
+	background: #1c1c28;
+	color: #fff;
+	border: 1px solid $mainColor;
+	display: grid;
+	grid-template-columns: 2fr 60px;
+	grid-template-rows: auto auto 1fr auto;
+	grid-template-areas:
+		'title . '
+		'main side'
+		'buttons side'
+		'content content';
+
+		&:before {
+	position:absolute; 
+	content:'';
+	right:-1px; top:-1px; 
+    border-top: 40px solid $mainColor;
+    border-left: 30px solid transparent;
+}
+:after {
+	position:absolute; 
+	 content:'';
+	 right:-2px; top:-2px;
+    border-top: 40px solid #000;
+    border-left: 30px solid transparent;
+}
+
+
+
+	&Title {
+		grid-area: title;
+
+		h3 {
+			padding: 1rem;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 1.9rem;
+			line-height: 2.7rem;
+			letter-spacing: 0.08em;
+			text-transform: uppercase;
+		}
+	}
+	&Body {
+		grid-area: main;
+		img {
+			width: 100%;
+		}
+	}
+	&Buttons {
+		grid-area: buttons;
+		display: flex;
+		justify-content: space-between;
+		padding: 2rem 0rem 3rem 1rem;
+	}
+	&Copy {
+		grid-area: content;
+		border-top: 1px solid $mainColor;
+
+		p {
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 22px;
+			letter-spacing: 0.01em;
+			padding: 1rem;
+		}
+	}
+	&Side {
+		grid-area: side;
+		justify-self: center;
+
+		ul {
+			padding: 0 1rem;
+		}
+
+		li {
+			border-bottom: 1px solid $mainColor;
+			padding-bottom: 1rem;
+			margin-bottom: 1rem;
+
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+
+		img {
+			width: 2.5rem;
+		}
+	}
+}
+
+
+// .bsg-box {
+// 	width: 800px;
+// 	border: 1px solid red;
+// 	height: 200px;
+// 	background: red;
+// 	-webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 90% 0);
+// 	clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 90% 0);
+// }
