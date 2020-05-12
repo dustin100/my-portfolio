@@ -1,0 +1,88 @@
+.formWrap {
+	display: flex;
+	justify-content: center;
+}
+
+.myForm {
+	width: 80%;
+}
+
+.myContact {
+	position: relative;
+	background: #1c1c28;
+	border: 1px solid $mainColor;
+	margin-bottom: 2rem;
+
+		&:before {
+	position:absolute; 
+	content:'';
+	right:-1px; top:-1px; 
+    border-top: 30px solid $mainColor;
+    border-left: 30px solid transparent;
+}
+:after {
+	position:absolute; 
+	 content:'';
+	 right:-2px; top:-2px;
+    border-top: 30px solid #000;
+    border-left: 30px solid transparent;
+}
+
+	h3 {
+		color: $accentTwo;
+		font-style: normal;
+		font-size: 1.9rem;
+		line-height: 2.7rem;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		padding-top: 1rem;
+		padding-left: 1rem;
+		margin-bottom: 2rem;
+	}
+
+	&Item {
+		margin-bottom: 1.5rem;
+	}
+
+	&Input {
+		display: block;
+		border: 1px solid $mainColor;
+		padding: 0.5rem;
+		background: $darkColor;
+		color: $lightColor;
+		font-family: $bodyFont;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 1.4rem;
+		line-height: 2.2rem;
+		letter-spacing: 0.01em;
+		width: 100%;
+	}
+
+	textarea {
+		height: 15rem;
+	}
+
+	&Btn {
+		width: 40%;
+		margin-bottom: 2rem;
+	}
+
+	&Social {
+		padding: 1.5rem;
+		border-top: 1px solid $mainColor;
+
+		ul {
+			display: flex;
+			justify-content: space-around;
+		}
+
+		li {
+			font-size: 3rem;
+		}
+
+		li a {
+			color: $lightColor;
+		}
+	}
+}

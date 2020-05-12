@@ -1,0 +1,29 @@
+.skills {
+	position: relative;
+	border: 1px solid $mainColor;
+	padding: 2rem;
+	margin-bottom: 3rem;
+
+	h2 {
+		display: inline-block;
+		width: 70%;
+	}
+
+	&Title {
+		position: absolute;
+		top: -10px;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+
+	&Icon {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		justify-items: center;
+		grid-row-gap: 2.5rem;
+		padding: 0.5rem 1rem;
+		margin-top: 3rem;
+	}
+}

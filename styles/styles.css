@@ -479,7 +479,7 @@ main h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .boxHeadings:before, .boxHeadings:after {
@@ -489,160 +489,6 @@ main h2 {
           flex: 1 1;
   border-bottom: 1px solid #9999ff;
   margin: auto;
-}
-
-.aboutMe {
-  color: #fff;
-  font-style: normal;
-  font-size: 1.4rem;
-  line-height: 2.2rem;
-  letter-spacing: 0.01em;
-  margin-bottom: 2rem;
-}
-
-.aboutMe span {
-  font-family: "Quantico", sans-serif;
-  font-weight: bold;
-  font-size: 1.9rem;
-  line-height: 2.7rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.aboutMe img {
-  width: 100%;
-  margin-bottom: 2rem;
-}
-
-.skills {
-  position: relative;
-  border: 1px solid #9999ff;
-  padding: 2rem;
-  margin-bottom: 3rem;
-}
-
-.skills h2 {
-  display: inline-block;
-  width: 70%;
-}
-
-.skillsTitle {
-  position: absolute;
-  top: -10px;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-}
-
-.skillsIcon {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
-  grid-row-gap: 4rem;
-  padding: 0.5rem 1rem;
-  margin-top: 3rem;
-}
-
-.formWrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-form {
-  width: 80%;
-}
-
-.myContact {
-  position: relative;
-  background: #1c1c28;
-  border: 1px solid #9999ff;
-  margin-bottom: 2rem;
-}
-
-.myContact:before {
-  position: absolute;
-  content: '';
-  right: -1px;
-  top: -1px;
-  border-top: 40px solid #9999ff;
-  border-left: 30px solid transparent;
-}
-
-.myContact :after {
-  position: absolute;
-  content: '';
-  right: -2px;
-  top: -2px;
-  border-top: 40px solid #000;
-  border-left: 30px solid transparent;
-}
-
-.myContact h3 {
-  color: #42ccaa;
-  font-style: normal;
-  font-size: 1.9rem;
-  line-height: 2.7rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding-top: 1rem;
-  padding-left: 1rem;
-  margin-bottom: 2rem;
-}
-
-.myContactItem {
-  margin-bottom: 1.5rem;
-}
-
-.myContactInput {
-  display: block;
-  border: 1px solid #9999ff;
-  padding: 0.5rem;
-  background: #000;
-  color: #fff;
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 1.4rem;
-  line-height: 2.2rem;
-  letter-spacing: 0.01em;
-  width: 100%;
-}
-
-.myContact textarea {
-  height: 15rem;
-}
-
-.myContactBtn {
-  width: 40%;
-  margin-bottom: 2rem;
-}
-
-.myContactSocial {
-  padding: 1.5rem;
-  border-top: 1px solid #9999ff;
-}
-
-.myContactSocial ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.myContactSocial li {
-  font-size: 3rem;
-}
-
-.myContactSocial li a {
-  color: #fff;
 }
 
 .projectBox {
@@ -664,8 +510,8 @@ form {
   content: '';
   right: -1px;
   top: -1px;
-  border-top: 40px solid #9999ff;
-  border-left: 30px solid transparent;
+  border-top: 30px solid #9999ff;
+  border-left: 25px solid transparent;
 }
 
 .projectBox :after {
@@ -673,8 +519,8 @@ form {
   content: '';
   right: -2px;
   top: -2px;
-  border-top: 40px solid #000;
-  border-left: 30px solid transparent;
+  border-top: 30px solid #000;
+  border-left: 25px solid transparent;
 }
 
 .projectBoxTitle {
@@ -758,6 +604,160 @@ form {
 
 .projectBoxSide img {
   width: 2.5rem;
+}
+
+.aboutMe {
+  color: #fff;
+  font-style: normal;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.01em;
+  margin-bottom: 2rem;
+}
+
+.aboutMe span {
+  font-family: "Quantico", sans-serif;
+  font-weight: bold;
+  font-size: 1.9rem;
+  line-height: 2.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.aboutMe img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.skills {
+  position: relative;
+  border: 1px solid #9999ff;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.skills h2 {
+  display: inline-block;
+  width: 70%;
+}
+
+.skillsTitle {
+  position: absolute;
+  top: -10px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.skillsIcon {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  grid-row-gap: 2.5rem;
+  padding: 0.5rem 1rem;
+  margin-top: 3rem;
+}
+
+.formWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.myForm {
+  width: 80%;
+}
+
+.myContact {
+  position: relative;
+  background: #1c1c28;
+  border: 1px solid #9999ff;
+  margin-bottom: 2rem;
+}
+
+.myContact:before {
+  position: absolute;
+  content: '';
+  right: -1px;
+  top: -1px;
+  border-top: 30px solid #9999ff;
+  border-left: 30px solid transparent;
+}
+
+.myContact :after {
+  position: absolute;
+  content: '';
+  right: -2px;
+  top: -2px;
+  border-top: 30px solid #000;
+  border-left: 30px solid transparent;
+}
+
+.myContact h3 {
+  color: #42ccaa;
+  font-style: normal;
+  font-size: 1.9rem;
+  line-height: 2.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.myContactItem {
+  margin-bottom: 1.5rem;
+}
+
+.myContactInput {
+  display: block;
+  border: 1px solid #9999ff;
+  padding: 0.5rem;
+  background: #000;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.01em;
+  width: 100%;
+}
+
+.myContact textarea {
+  height: 15rem;
+}
+
+.myContactBtn {
+  width: 40%;
+  margin-bottom: 2rem;
+}
+
+.myContactSocial {
+  padding: 1.5rem;
+  border-top: 1px solid #9999ff;
+}
+
+.myContactSocial ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.myContactSocial li {
+  font-size: 3rem;
+}
+
+.myContactSocial li a {
+  color: #fff;
 }
 
 footer {
