@@ -373,12 +373,13 @@ p {
   border: none;
   background: #000;
   color: #ffb800;
-  padding: .8rem 1.4rem;
+  padding: 0.8rem 1.4rem;
   text-decoration: none;
   font-size: 1.2rem;
-  letter-spacing: 0.7px;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   border: 1px solid #9999ff;
+  font-family: "Quantico", sans-serif;
 }
 
 header {
@@ -466,7 +467,7 @@ main h2 {
   font-size: 1.2rem;
   line-height: 2.2rem;
   text-align: center;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   border: 1px solid #9999ff;
   color: #42ccaa;
@@ -496,6 +497,7 @@ main h2 {
   background: #1c1c28;
   color: #fff;
   border: 1px solid #9999ff;
+  margin-bottom: 3rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 60px;
@@ -535,7 +537,7 @@ main h2 {
   font-weight: bold;
   font-size: 1.9rem;
   line-height: 2.7rem;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
 }
 
@@ -559,7 +561,11 @@ main h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2rem 0rem 3rem 1rem;
+  padding: 1.4rem 0rem 1.4rem 1.4rem;
+}
+
+.projectBoxButtons button {
+  width: 48%;
 }
 
 .projectBoxCopy {
@@ -572,11 +578,11 @@ main h2 {
 
 .projectBoxCopy p {
   font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 22px;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
   letter-spacing: 0.01em;
-  padding: 1rem;
+  padding: 1.6rem 1.5rem 2rem 1.5rem;
 }
 
 .projectBoxSide {
@@ -661,6 +667,10 @@ main h2 {
   margin-top: 3rem;
 }
 
+.skills img {
+  width: 40px;
+}
+
 .formWrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -679,6 +689,7 @@ main h2 {
   background: #1c1c28;
   border: 1px solid #9999ff;
   margin-bottom: 2rem;
+  max-width: 600px;
 }
 
 .myContact:before {
@@ -770,4 +781,64 @@ footer {
   font-size: 1.4rem;
   line-height: 2.2rem;
   letter-spacing: 0.01em;
+}
+
+@media (min-width: 650px) {
+  .aboutMe img {
+    display: block;
+    max-width: 600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .skills img {
+    width: 50px;
+  }
+}
+
+@media (min-width: 750px) {
+  .headerContent .tagline {
+    margin-right: 4rem;
+    margin-left: 4rem;
+    font-size: 5rem;
+  }
+  .headerContent .tagline span {
+    display: inline;
+  }
+  .headerContent .tagline .wTwo {
+    display: block;
+  }
+  .skills img {
+    width: 60px;
+  }
+  .projectBox {
+    -ms-grid-columns: 3fr 2fr 60px;
+        grid-template-columns: 3fr 2fr 60px;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 'title . .' 'main content side' 'buttons content side';
+  }
+  .projectBoxTitle {
+    border-right: 1px solid #9999ff;
+  }
+  .projectBoxSide {
+    border-top: 1px solid #9999ff;
+    padding-top: 2rem;
+    width: 100%;
+  }
+  .projectBoxSide img {
+    width: 3.5rem;
+  }
+  .projectBoxBody {
+    border-right: 1px solid #9999ff;
+  }
+  .projectBoxButtons {
+    border-right: 1px solid #9999ff;
+  }
+  .projectBoxButtons button {
+    margin-right: 1rem;
+  }
+  main h2 {
+    width: 50rem;
+  }
 }

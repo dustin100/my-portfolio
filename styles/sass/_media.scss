@@ -1,0 +1,69 @@
+@media (min-width: 650px) {
+	.aboutMe img {
+		display: block;
+		max-width: 600px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.skills img {
+		width: 50px;
+	}
+}
+
+@media (min-width: 750px) {
+	.headerContent .tagline {
+		span {
+			display: inline;
+		}
+		.wTwo {
+			display: block;
+		}
+		margin-right: 4rem;
+		margin-left: 4rem;
+		font-size: 5rem;
+	}
+	.skills img {
+		width: 60px;
+	}
+
+	.projectBox {
+		grid-template-columns: 3fr 2fr 60px;
+		grid-template-rows: auto auto auto;
+		grid-template-areas:
+			'title . .'
+			'main content side'
+			'buttons content side';
+
+		&Title {
+			border-right: 1px solid $mainColor;
+		}
+
+		&Side {
+			border-top: 1px solid $mainColor;
+			padding-top: 2rem;
+			width: 100%;
+
+			img {
+				width: 3.5rem;
+			}
+		}
+
+		&Body {
+			border-right: 1px solid $mainColor;
+		}
+
+		&Buttons {
+			border-right: 1px solid $mainColor;
+
+			button {
+				margin-right: 1rem;
+			}
+		}
+    }
+    
+main h2 {
+    width: 50rem;
+}
+
+}
