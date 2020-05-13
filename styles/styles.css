@@ -383,7 +383,6 @@ p {
 }
 
 header {
-  background: url(../../img/purple-holodeck-style.jpg) no-repeat bottom;
   height: 100vh;
   width: 100%;
 }
@@ -455,6 +454,21 @@ header {
 
 .headerContentSocial a:hover {
   color: #b19cd9;
+}
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  background: url(../../img/purple-holodeck-style.jpg) no-repeat bottom;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+canvas {
+  display: block;
 }
 
 main {
@@ -807,6 +821,12 @@ footer {
   }
   .headerContent .tagline .wTwo {
     display: block;
+  }
+  .headerContent .myName {
+    height: 40rem;
+  }
+  .headerContentSocial {
+    font-size: 3.5rem;
   }
   .skills img {
     width: 60px;
