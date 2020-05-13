@@ -19,8 +19,8 @@
 		.wTwo {
 			display: block;
 		}
-		margin-right: 4rem;
-		margin-left: 4rem;
+		margin-right: 4.2rem;
+		margin-left: 4.2rem;
 		font-size: 5rem;
     }
     .headerContent .myName {
@@ -28,6 +28,10 @@
     }
     .headerContentSocial {
         font-size: 3.5rem;
+    }
+
+    .headerContent .btn {
+        font-size: 1.5rem;
     }
 	.skills img {
 		width: 60px;
@@ -42,7 +46,10 @@
 			'buttons content side';
 
 		&Title {
-			border-right: 1px solid $mainColor;
+            border-right: 1px solid $mainColor;
+            h3 {
+                font-size: 2.4rem;
+            }
 		}
 
 		&Side {
@@ -65,11 +72,43 @@
 			button {
 				margin-right: 1rem;
 			}
-		}
+        }
+        
+        &Copy p {
+            font-size: 1.5rem;
+        }
     }
     
 main h2 {
     width: 50rem;
+    font-size: 1.5rem;
 }
+
+}
+
+@media (min-width: 800px) {
+
+    .aboutMe {
+        display: flex;
+        
+        img {
+            flex: 1;
+            height: 100%;
+            width: auto;
+        }
+
+        &Text {
+        margin-left: 2rem;
+    }
+        
+    }
+    
+
+}
+
+@media (min-width: 1050px) {
+    .headerContent .tagline {
+    font-size: 7rem;
+    }
 
 }
