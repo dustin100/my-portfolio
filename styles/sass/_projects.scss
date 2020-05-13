@@ -1,0 +1,97 @@
+.projectBox {
+	position: relative;
+	background: #1c1c28;
+	color: #fff;
+	border: 1px solid $mainColor;
+	margin-bottom: 3rem;
+	display: grid;
+	grid-template-columns: 2fr 60px;
+	grid-template-rows: auto auto 1fr auto;
+	grid-template-areas:
+		'title . '
+		'main side'
+		'buttons side'
+		'content content';
+
+	&:before {
+		position: absolute;
+		content: '';
+		right: -1px;
+		top: -1px;
+		border-top: 30px solid $mainColor;
+		border-left: 25px solid transparent;
+	}
+	:after {
+		position: absolute;
+		content: '';
+		right: -2px;
+		top: -2px;
+		border-top: 30px solid #000;
+		border-left: 25px solid transparent;
+	}
+
+	&Title {
+		grid-area: title;
+
+		h3 {
+			padding: 1rem;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 1.9rem;
+			line-height: 2.7rem;
+			letter-spacing: 0.09em;
+			text-transform: uppercase;
+		}
+	}
+	&Body {
+		grid-area: main;
+		img {
+			width: 100%;
+		}
+	}
+	&Buttons {
+		grid-area: buttons;
+		display: flex;
+		justify-content: space-between;
+		padding: 1.4rem 0rem 1.4rem 1.4rem;
+
+		button {
+			width: 48%;
+		}
+	}
+	&Copy {
+		grid-area: content;
+        border-top: 1px solid $mainColor;
+
+		p {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 1.4rem;
+			line-height: 2.2rem;
+			letter-spacing: 0.01em;
+			padding: 1.6rem 1.5rem 2rem 1.5rem;
+		}
+	}
+	&Side {
+		grid-area: side;
+		justify-self: center;
+
+		ul {
+			padding: 0 1rem;
+		}
+
+		li {
+			border-bottom: 1px solid $mainColor;
+			padding-bottom: 1rem;
+			margin-bottom: 1rem;
+
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+
+		img {
+			width: 2.5rem;
+		}
+	}
+}

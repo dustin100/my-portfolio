@@ -1,39 +1,60 @@
 // Credit for animation https://codepen.io/webdevshorts/pen/xmGbBX
+header {
+	height: 100vh;
+	width: 100%;
+}
 
 .headerContent {
+	position: relative;
 	height: 100%;
-	display: flex;
-	justify-content: center;
 	color: #fff;
+	display: flex;
 	align-items: center;
+	justify-content: center;
+	text-align: center;
 
-	&Text {
+	.myName {
+		height: 35rem;
+		position: absolute;
+		top: 2rem;
+		left: 0;
+	}
+
+	.tagline {
+		font-family: $h1Header;
+		font-size: 4.5rem;
 		text-align: center;
-	}
-
-	h1 {
-		font-size: 7rem;
+		line-height: 5.8rem;
+		font-weight: normal;
 		margin-bottom: 2rem;
-	}
+		font-style: 400;
 
-	p {
-		font-size: 3rem;
+		span {
+			display: block;
+		}
 	}
 
 	&Social {
 		position: absolute;
 		font-size: 3rem;
-		top:400px;
-		left: 0;
-		margin-left: 1rem;
-		
+		top: 40%;
+		right: 0;
+		transform: translateY(-20%);
 
 		li {
-			margin-bottom: 2rem;
+			margin-bottom: 1rem;
+			border-bottom: 1px solid $accentTwo;
+			padding-bottom: 2rem;
+
+			&:last-child {
+				margin-bottom: 0;
+				border-bottom: 0;
+				padding-bottom: 0;
+			}
 		}
 
 		a {
-			color: #fff;
+			color: $mainColor;
 			cursor: pointer;
 			transition: all 0.3s ease-in-out;
 
@@ -44,133 +65,82 @@
 	}
 }
 
-.animationArea {
-	background: #000;
-	width: 100%;
-	height: 100vh;
-	background: url(../img/space.png) no-repeat;
+.menuIcon {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 28px;
+	height: 32px;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
 }
 
-.starArea {
-	position: absolute;
-	top: 0;
-	right: 15%;
+.line {
 	width: 100%;
-	height: 45%;
-	overflow: hidden;
-	transform: rotateZ(150deg);
-}
-
-.starArea li {
-	position: absolute;
-	top: 20%;
-	left: 20%;
 	height: 2px;
-	background: linear-gradient(-45deg, #5f91ff, rgba(0, 0, 255, 0));
-	filter: drop-shadow(0 0 6px #699bff);
-	animation: tail 3000ms ease-in-out infinite,
-		shooting 3000ms ease-in-out infinite;
+	background: $lightColor;
+	transition: all 0.8s;
 }
 
-.starArea li::before,
-.starArea li::after {
-	position: absolute;
-	content: '';
+.change .line-1 {
+	transform: rotateZ(-405deg) translate(-8px, 6px);
+}
+
+.change .line-3 {
+	transform: rotateZ(405deg) translate(-8px, -6px);
+}
+.change .line-2 {
+	opacity: 0;
+}
+
+.change.navBar {
 	top: 0;
+}
+
+.navBar {
+	width: 100%;
+	height: 10vh;
+	position: fixed;
+	top: -300px;
 	right: 0;
-	height: 2px;
-	background: linear-gradient(
-		-45deg,
-		rgba(0, 0, 255, 0),
-		#5f91ff,
-		rgba(0, 0, 255, 0)
-	);
-	border-radius: 100%;
-	transform: translateX(50%) rotateZ(45deg);
-	animation: shining 3000ms ease-in-out infinite;
-}
+	background: #1c1c28;
+	transition: top 0.5s ease-in-out;
+	z-index: 2;
+	border: 1px solid $mainColor;
 
-.starArea li::after {
-	transform: translateX(50%) rotateZ(-45deg);
-}
+	&List {
+		display: flex;
+		justify-content: flex-end;
+		text-transform: uppercase;
+		align-items: center;
+		height: 100%;
 
-.starArea li:nth-child(1)::before,
-.starArea li:nth-child(1)::after {
-	animation-delay: 650ms;
-}
-
-.starArea li:nth-child(2) {
-	top: 30%;
-	left: 25%;
-	animation-delay: 950ms;
-}
-.starArea li:nth-child(2)::before,
-.starArea li:nth-child(2)::after {
-	animation-delay: 950ms;
-}
-
-.starArea li:nth-child(3) {
-	top: 50%;
-	left: 10%;
-	animation-delay: 1600ms;
-}
-.starArea li:nth-child(3)::before,
-.starArea li:nth-child(3)::after {
-	animation-delay: 1600ms;
-}
-
-.starArea li:nth-child(4) {
-	top: 0;
-	left: 10%;
-	animation-delay: 4700ms;
-}
-.starArea li:nth-child(4)::before,
-.starArea li:nth-child(4)::after {
-	animation-delay: 4700ms;
-}
-
-.starArea li:nth-child(5) {
-	top: 40%;
-	left: 60%;
-	animation-delay: 2100ms;
-}
-.starArea li:nth-child(5)::before,
-.starArea li:nth-child(5)::after {
-	animation-delay: 2100ms;
-}
-
-/* Animations */
-@keyframes tail {
-	0% {
-		width: 0;
+		li {
+			padding-right: 8rem;
+		}
 	}
 
-	30% {
-		width: 100px;
-	}
-
-	100% {
-		width: 0;
+	&Links a {
+		text-decoration: none;
+		color: $lightColor;
+		font-size: 1.5rem;
 	}
 }
 
-@keyframes shining {
-	0% {
-		width: 0;
-	}
-	50% {
-		width: 30px;
-	}
-	100% {
-		width: 0;
-	}
+#particles-js {
+	width: 100%;
+	height: 100%;
+	background-color: $darkColor;
+	// background: url(../../img/purple-holodeck-style.jpg) no-repeat bottom;
+
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	position: absolute;
 }
 
-@keyframes shooting {
-	0% {
-		transform: translateX(0);
-	}
-	100% {
-		transform: translateX(320px);
-	}
+canvas {
+	display: block;
 }

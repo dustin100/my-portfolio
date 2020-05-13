@@ -1,0 +1,115 @@
+@media (min-width: 650px) {
+	.aboutMe img {
+		display: block;
+		max-width: 600px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.skills img {
+		width: 50px;
+	}
+}
+
+@media (min-width: 750px) {
+	.headerContent .tagline {
+		span {
+			display: inline;
+		}
+		.wTwo {
+			display: block;
+		}
+		margin-right: 4.2rem;
+		margin-left: 4.2rem;
+		font-size: 5rem;
+    }
+    .headerContent .myName {
+        height:40rem;
+    }
+    .headerContentSocial {
+        font-size: 3.5rem;
+    }
+
+    .headerContent .btn {
+        font-size: 1.5rem;
+    }
+	.skills img {
+		width: 60px;
+	}
+
+	.projectBox {
+		grid-template-columns: 3fr 2fr 60px;
+		grid-template-rows: auto auto auto;
+		grid-template-areas:
+			'title . .'
+			'main content side'
+			'buttons content side';
+
+		&Title {
+            border-right: 1px solid $mainColor;
+            h3 {
+                font-size: 2.4rem;
+            }
+		}
+
+		&Side {
+			border-top: 1px solid $mainColor;
+			padding-top: 2rem;
+			width: 100%;
+
+			img {
+				width: 3.5rem;
+			}
+		}
+
+		&Body {
+			border-right: 1px solid $mainColor;
+		}
+
+		&Buttons {
+			border-right: 1px solid $mainColor;
+
+			button {
+				margin-right: 1rem;
+			}
+        }
+        
+        &Copy p {
+            font-size: 1.5rem;
+        }
+    }
+    
+main h2 {
+    width: 50rem;
+    font-size: 1.5rem;
+}
+
+}
+
+@media (min-width: 800px) {
+
+    .aboutMe {
+        display: flex;
+        
+        img {
+            flex: 1;
+            height: 100%;
+            width: auto;
+        }
+
+        &Text {
+		margin-left: 2rem;
+		flex: 1;
+    }
+        
+    }
+    
+
+}
+
+@media (min-width: 1050px) {
+    .headerContent .tagline {
+    font-size: 7rem;
+    }
+
+}

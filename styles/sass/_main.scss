@@ -1,0 +1,36 @@
+main {
+	background: $darkColor;
+
+	h2 {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 1.2rem;
+		line-height: 2.2rem;
+		text-align: center;
+		letter-spacing: 0.09em;
+		text-transform: uppercase;
+		border: 1px solid $mainColor;
+		color: $accentTwo;
+		background: $darkColor;
+		display: inline;
+		padding: 0.5rem 6rem;
+	}
+}
+
+.boxHeadings {
+	display: flex;
+	margin-bottom: 4rem;
+	&:before,
+	&:after {
+		content: '';
+		flex: 1 1;
+		border-bottom: 1px solid $mainColor;
+		margin: auto;
+	}
+}
+
+
+
+
+
+
