@@ -22,4 +22,9 @@
 	text-transform: uppercase;
 	border: 1px solid $mainColor;
 	font-family: $headerFont;
+	&:hover, &:focus {
+		background: $accentOne;
+		color: $darkColor;
+	}
+	 
 }

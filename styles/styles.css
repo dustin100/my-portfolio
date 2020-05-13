@@ -381,6 +381,11 @@ p {
   font-family: "Quantico", sans-serif;
 }
 
+.btn:hover, .btn:focus {
+  background: #ffb800;
+  color: #000;
+}
+
 header {
   height: 100vh;
   width: 100%;
@@ -967,6 +972,9 @@ footer {
   }
   .aboutMeText {
     margin-left: 2rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
 }
 
