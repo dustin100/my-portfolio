@@ -531,8 +531,12 @@ header {
   height: 100%;
 }
 
-.navBarList li {
-  padding-right: 8rem;
+.navBarList li a {
+  padding: 3rem;
+}
+
+.navBarList li:last-child {
+  margin-right: 5rem;
 }
 
 .navBarLinks a {

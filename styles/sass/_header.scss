@@ -118,7 +118,12 @@ header {
 		height: 100%;
 
 		li {
-			padding-right: 8rem;
+			a {
+				padding: 3rem;
+			}
+			&:last-child {
+				margin-right:5rem ;
+			}
 		}
 	}
 
