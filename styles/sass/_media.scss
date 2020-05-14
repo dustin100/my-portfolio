@@ -16,8 +16,8 @@
 	}
 
 	.skilllogo {
-	width: 4rem;
-}
+		width: 4rem;
+	}
 }
 
 @media (min-width: 650px) {
@@ -32,15 +32,14 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
-	
-	
+
 	.btn {
 		padding: 1.5rem 7.5rem;
 	}
 
 	.skilllogo {
-	width: 4rem;
-}
+		width: 4rem;
+	}
 }
 
 @media (min-width: 750px) {
@@ -60,10 +59,6 @@
 		height: 40rem;
 		top: 4.7rem;
 	}
-
-	
-
-	
 
 	.projectBox {
 		grid-template-columns: 3fr 2fr 60px;
@@ -120,15 +115,16 @@
 		width: 40%;
 	}
 	.projectBox {
-		grid-template-columns: 3fr 2fr 70px;}
+		grid-template-columns: 3fr 2fr 70px;
+	}
 
 	.aboutMe {
 		display: flex;
 
 		img {
 			flex: 1;
-			height: 100%;
-			width: auto;
+			height: auto;
+			width: 100%;
 		}
 
 		&Text {
@@ -137,8 +133,8 @@
 		}
 	}
 	.skilllogo {
-	width: 5rem;
-}
+		width: 5rem;
+	}
 }
 
 @media (min-width: 1050px) {
@@ -156,8 +152,5 @@
 			font-size: 1.8rem;
 			line-height: 3.3rem;
 		}
-
-		
 	}
-
 }

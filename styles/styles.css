@@ -1048,8 +1048,8 @@ footer {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
   }
   .aboutMeText {
     margin-left: 2rem;
