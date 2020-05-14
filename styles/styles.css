@@ -531,9 +531,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   text-transform: uppercase;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -545,6 +545,10 @@ header {
   padding: 2rem;
 }
 
+.navBarList li:last-child {
+  margin-right: 20px;
+}
+
 .navBarLinks {
   position: relative;
 }
@@ -552,7 +556,11 @@ header {
 .navBarLinks a {
   text-decoration: none;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  font-family: "Quantico", sans-serif;
 }
 
 .navBarLinks:after {
@@ -562,13 +570,14 @@ header {
   bottom: 0;
   width: 100%;
   height: 2px;
-  background: #42ccaa;
+  background: #ffb800;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transition: -webkit-transform 250ms;
   transition: -webkit-transform 250ms;
   transition: transform 250ms;
   transition: transform 250ms, -webkit-transform 250ms;
+  margin-bottom: -3px;
 }
 
 .navBarLinks:hover:after {
@@ -666,7 +675,7 @@ main h2 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: title;
-  padding: 1rem 1rem 0.8rem 1rem;
+  padding: 1.3rem 1rem 0.5rem 1rem;
 }
 
 .projectBoxTitle h3 {
@@ -696,9 +705,9 @@ main h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   padding: 1.4rem 0rem 1.4rem 1.4rem;
 }
 
@@ -885,7 +894,6 @@ main h2 {
 }
 
 .myContactBtn {
-  width: 40%;
   margin-bottom: 2rem;
 }
 
@@ -958,7 +966,7 @@ footer {
     padding: 1.5rem 7.5rem;
   }
   .skilllogo {
-    width: 4.5rem;
+    width: 4rem;
   }
 }
 
@@ -979,9 +987,6 @@ footer {
     height: 40rem;
     top: 4.7rem;
   }
-  .skilllogo {
-    width: 5rem;
-  }
   .projectBox {
     -ms-grid-columns: 3fr 2fr 60px;
         grid-template-columns: 3fr 2fr 60px;
@@ -991,6 +996,7 @@ footer {
   }
   .projectBoxTitle {
     border-right: 1px solid #9999ff;
+    border-bottom: 1px solid #9999ff;
   }
   .projectBoxTitle h3 {
     font-size: 2.4rem;
@@ -1029,6 +1035,10 @@ footer {
   .navBar {
     width: 40%;
   }
+  .projectBox {
+    -ms-grid-columns: 3fr 2fr 70px;
+        grid-template-columns: 3fr 2fr 70px;
+  }
   .aboutMe {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1046,6 +1056,9 @@ footer {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+  }
+  .skilllogo {
+    width: 5rem;
   }
 }
 

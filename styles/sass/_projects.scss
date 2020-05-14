@@ -32,7 +32,7 @@
 
 	&Title {
 		grid-area: title;
-		padding: 1rem 1rem 0.8rem 1rem;
+		padding: 1.3rem 1rem 0.5rem 1rem;
 
 		h3 {
 			padding: 1rem;
@@ -53,7 +53,7 @@
 	&Buttons {
 		grid-area: buttons;
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		padding: 1.4rem 0rem 1.4rem 1.4rem;
 
 		button {
