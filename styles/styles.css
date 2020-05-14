@@ -625,6 +625,10 @@ main h2 {
   margin: auto;
 }
 
+.skilllogo {
+  width: 3rem;
+}
+
 .projectBox {
   position: relative;
   background: #1c1c28;
@@ -743,7 +747,7 @@ main h2 {
 }
 
 .projectBoxSide img {
-  width: 2.5rem;
+  width: 100%;
 }
 
 .aboutMe {
@@ -803,7 +807,7 @@ main h2 {
 }
 
 .skills img {
-  width: 40px;
+  width: 100%;
 }
 
 .formWrap {
@@ -930,9 +934,12 @@ footer {
   }
 }
 
-@media (min-width: 450px) {
+@media (min-width: 550px) {
   .btn {
     padding: 1.5rem 5.3rem;
+  }
+  .skilllogo {
+    width: 4rem;
   }
 }
 
@@ -947,14 +954,11 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
-  .skills img {
-    width: 50px;
-  }
-  .projectBoxSide img {
-    width: 4rem;
-  }
   .btn {
     padding: 1.5rem 7.5rem;
+  }
+  .skilllogo {
+    width: 4.5rem;
   }
 }
 
@@ -975,8 +979,8 @@ footer {
     height: 40rem;
     top: 4.7rem;
   }
-  .skills img {
-    width: 60px;
+  .skilllogo {
+    width: 5rem;
   }
   .projectBox {
     -ms-grid-columns: 3fr 2fr 60px;
@@ -996,9 +1000,6 @@ footer {
     padding-top: 2rem;
     width: 100%;
     text-align: center;
-  }
-  .projectBoxSide img {
-    width: 3.5rem;
   }
   .projectBoxSide ul {
     padding: 0 1rem 0 0;
@@ -1059,8 +1060,5 @@ footer {
     padding: 3rem;
     font-size: 1.8rem;
     line-height: 3.3rem;
-  }
-  .projectBoxSide img {
-    width: 4.5rem;
   }
 }
