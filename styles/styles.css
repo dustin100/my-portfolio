@@ -372,13 +372,15 @@ p {
   border: none;
   background: #000;
   color: #ffb800;
-  padding: 0.8rem 1.4rem;
+  padding: 1.5rem 3rem;
   text-decoration: none;
   font-size: 1.2rem;
+  font-weight: bold;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   border: 1px solid #9999ff;
   font-family: "Quantico", sans-serif;
+  cursor: pointer;
 }
 
 .btn:hover, .btn:focus {
@@ -438,9 +440,9 @@ header {
 }
 
 .headerContentSocial li {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   border-bottom: 1px solid #42ccaa;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
 }
 
 .headerContentSocial li:last-child {
@@ -473,7 +475,7 @@ header {
   width: 28px;
   height: 32px;
   position: fixed;
-  top: 20px;
+  top: 12px;
   right: 20px;
   cursor: pointer;
 }
@@ -502,17 +504,18 @@ header {
 
 .change.navBar {
   top: 0;
+  right: 0;
 }
 
 .navBar {
   width: 100%;
-  height: 10vh;
+  height: 60px;
   position: fixed;
-  top: -300px;
-  right: 0;
-  background: #1c1c28;
-  -webkit-transition: top 0.5s ease-in-out;
-  transition: top 0.5s ease-in-out;
+  top: 0;
+  right: -800px;
+  background: #4D4E82;
+  -webkit-transition: right 0.5s ease-in-out;
+  transition: right 0.5s ease-in-out;
   z-index: 2;
   border: 1px solid #9999ff;
 }
@@ -521,9 +524,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   text-transform: uppercase;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -532,11 +535,7 @@ header {
 }
 
 .navBarList li a {
-  padding: 3rem;
-}
-
-.navBarList li:last-child {
-  margin-right: 5rem;
+  padding: 2rem;
 }
 
 .navBarLinks a {
@@ -631,6 +630,7 @@ main h2 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: title;
+  padding: 1rem 1rem 0.8rem 1rem;
 }
 
 .projectBoxTitle h3 {
@@ -702,8 +702,8 @@ main h2 {
 
 .projectBoxSide li {
   border-bottom: 1px solid #9999ff;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .projectBoxSide li:last-child {
@@ -734,6 +734,7 @@ main h2 {
 
 .aboutMe img {
   width: 100%;
+  height: auto;
   margin-bottom: 2rem;
 }
 
@@ -886,6 +887,9 @@ footer {
 }
 
 @media (min-width: 650px) {
+  .navBar {
+    width: 50%;
+  }
   .aboutMe img {
     display: block;
     max-width: 600px;
@@ -896,10 +900,17 @@ footer {
   .skills img {
     width: 50px;
   }
+  .projectBoxSide img {
+    width: 4rem;
+  }
+  .btn {
+    padding: 1.5rem 7.5rem;
+  }
 }
 
 @media (min-width: 750px) {
   .headerContent .tagline {
+    line-height: 104px;
     margin-right: 4.2rem;
     margin-left: 4.2rem;
     font-size: 5rem;
@@ -912,12 +923,7 @@ footer {
   }
   .headerContent .myName {
     height: 40rem;
-  }
-  .headerContentSocial {
-    font-size: 3.5rem;
-  }
-  .headerContent .btn {
-    font-size: 1.5rem;
+    top: 4.7rem;
   }
   .skills img {
     width: 60px;
@@ -939,21 +945,28 @@ footer {
     border-top: 1px solid #9999ff;
     padding-top: 2rem;
     width: 100%;
+    text-align: center;
   }
   .projectBoxSide img {
     width: 3.5rem;
+  }
+  .projectBoxSide ul {
+    padding: 0 1rem 0 0;
   }
   .projectBoxBody {
     border-right: 1px solid #9999ff;
   }
   .projectBoxButtons {
     border-right: 1px solid #9999ff;
-  }
-  .projectBoxButtons button {
-    margin-right: 1rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .projectBoxCopy p {
     font-size: 1.5rem;
+  }
+  .btn {
+    padding: 1.5rem 3.4rem;
   }
   main h2 {
     width: 50rem;
@@ -962,6 +975,9 @@ footer {
 }
 
 @media (min-width: 800px) {
+  .navBar {
+    width: 40%;
+  }
   .aboutMe {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -985,5 +1001,16 @@ footer {
 @media (min-width: 1050px) {
   .headerContent .tagline {
     font-size: 7rem;
+  }
+  .btn {
+    padding: 1.5rem 6.5rem;
+  }
+  .projectBoxCopy p {
+    padding: 3rem;
+    font-size: 1.8rem;
+    line-height: 3.3rem;
+  }
+  .projectBoxSide img {
+    width: 4.5rem;
   }
 }

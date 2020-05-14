@@ -15,16 +15,18 @@
 	border: none;
 	background: $darkColor;
 	color: $accentOne;
-	padding: 0.8rem 1.4rem;
+	padding: 1.5rem 3rem;
 	text-decoration: none;
 	font-size: 1.2rem;
+	font-weight: bold;
 	letter-spacing: 0.09em;
 	text-transform: uppercase;
 	border: 1px solid $mainColor;
 	font-family: $headerFont;
-	&:hover, &:focus {
+	cursor: pointer;
+	&:hover,
+	&:focus {
 		background: $accentOne;
 		color: $darkColor;
 	}
-	 
 }
