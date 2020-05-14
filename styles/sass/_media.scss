@@ -1,4 +1,8 @@
 @media (min-width: 650px) {
+	.navBar {
+		width: 50%;
+	}
+
 	.aboutMe img {
 		display: block;
 		max-width: 600px;
@@ -9,10 +13,17 @@
 	.skills img {
 		width: 50px;
 	}
+	.projectBoxSide img {
+		width: 4rem;
+	}
+	.btn {
+		padding: 1.5rem 7.5rem;
+	}
 }
 
 @media (min-width: 750px) {
 	.headerContent .tagline {
+		line-height: 104px;
 		span {
 			display: inline;
 		}
@@ -22,17 +33,12 @@
 		margin-right: 4.2rem;
 		margin-left: 4.2rem;
 		font-size: 5rem;
-    }
-    .headerContent .myName {
-        height:40rem;
-    }
-    .headerContentSocial {
-        font-size: 3.5rem;
-    }
+	}
+	.headerContent .myName {
+		height: 40rem;
+		top: 4.7rem;
+	}
 
-    .headerContent .btn {
-        font-size: 1.5rem;
-    }
 	.skills img {
 		width: 60px;
 	}
@@ -46,19 +52,23 @@
 			'buttons content side';
 
 		&Title {
-            border-right: 1px solid $mainColor;
-            h3 {
-                font-size: 2.4rem;
-            }
+			border-right: 1px solid $mainColor;
+			h3 {
+				font-size: 2.4rem;
+			}
 		}
 
 		&Side {
 			border-top: 1px solid $mainColor;
 			padding-top: 2rem;
 			width: 100%;
+			text-align: center;
 
 			img {
 				width: 3.5rem;
+			}
+			ul {
+				padding: 0 1rem 0 0;
 			}
 		}
 
@@ -68,48 +78,64 @@
 
 		&Buttons {
 			border-right: 1px solid $mainColor;
+			justify-content: space-evenly;
+		}
 
-			button {
-				margin-right: 1rem;
-			}
-        }
-        
-        &Copy p {
-            font-size: 1.5rem;
-        }
-    }
-    
-main h2 {
-    width: 50rem;
-    font-size: 1.5rem;
-}
+		&Copy p {
+			font-size: 1.5rem;
+		}
+	}
+	.btn {
+		padding: 1.5rem 3.4rem;
+	}
 
+	main h2 {
+		width: 50rem;
+		font-size: 1.5rem;
+	}
 }
 
 @media (min-width: 800px) {
+	.navBar {
+		width: 40%;
+	}
 
-    .aboutMe {
-        display: flex;
-        
-        img {
-            flex: 1;
-            height: 100%;
-            width: auto;
-        }
+	.aboutMe {
+		display: flex;
 
-        &Text {
-		margin-left: 2rem;
-		flex: 1;
-    }
-        
-    }
-    
+		img {
+			flex: 1;
+			height: 100%;
+			width: auto;
+		}
 
+		&Text {
+			margin-left: 2rem;
+			flex: 1;
+		}
+	}
 }
 
 @media (min-width: 1050px) {
-    .headerContent .tagline {
-    font-size: 7rem;
-    }
+	.headerContent .tagline {
+		font-size: 7rem;
+	}
 
+	.btn {
+		padding: 1.5rem 6.5rem;
+	}
+
+	.projectBox {
+		&Copy p {
+			padding: 3rem;
+			font-size: 1.8rem;
+			line-height: 3.3rem;
+		}
+
+		&Side {
+			img {
+				width: 4.5rem;
+			}
+		}
+	}
 }

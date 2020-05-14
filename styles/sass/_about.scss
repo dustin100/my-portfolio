@@ -6,7 +6,6 @@
 	letter-spacing: 0.01em;
 	margin-bottom: 5rem;
 
-
 	span {
 		font-family: $headerFont;
 		font-weight: bold;
@@ -17,6 +16,7 @@
 	}
 	img {
 		width: 100%;
+		height: auto;
 		margin-bottom: 2rem;
 	}
 }
