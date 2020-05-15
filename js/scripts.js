@@ -11,5 +11,10 @@ document.addEventListener('DOMContentLoaded', function () {
 		item.addEventListener('click', () => {
 			navBar.classList.toggle('change');
 		});
+		item.addEventListener('keyup', (e) => {
+			if (e.keyCode === 13) {
+				navBar.classList.toggle('change');
+			}
+		});
 	});
 });
