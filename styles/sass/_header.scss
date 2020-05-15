@@ -56,10 +56,10 @@ header {
 		a {
 			color: $mainColor;
 			cursor: pointer;
-			transition: all 0.3s ease-in-out;
 
-			&:hover {
-				color: #b19cd9;
+			&:hover,
+			&:focus {
+				color: $accentOne;
 			}
 		}
 	}

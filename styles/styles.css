@@ -454,12 +454,10 @@ header {
 .headerContentSocial a {
   color: #9999ff;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }
 
-.headerContentSocial a:hover {
-  color: #b19cd9;
+.headerContentSocial a:hover, .headerContentSocial a:focus {
+  color: #ffb800;
 }
 
 .menuIcon {
@@ -918,16 +916,21 @@ main h2 {
   color: #fff;
 }
 
+.myContactSocial li a:hover, .myContactSocial li a:focus {
+  color: #ffb800;
+}
+
 footer {
   background: #000;
   padding: 1rem;
-  color: #fff;
+  color: #42ccaa;
   border-top: 1px solid #9999ff;
   text-align: center;
-  font-style: normal;
-  font-size: 1.4rem;
+  font-weight: bold;
+  font-size: 1rem;
   line-height: 2.2rem;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
 }
 
 @media (min-width: 375px) {
@@ -972,10 +975,10 @@ footer {
 
 @media (min-width: 750px) {
   .headerContent .tagline {
-    line-height: 104px;
+    font-size: 6.5rem;
+    line-height: 70px;
     margin-right: 4.2rem;
     margin-left: 4.2rem;
-    font-size: 5rem;
   }
   .headerContent .tagline span {
     display: inline;
@@ -1056,6 +1059,8 @@ footer {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    font-size: 1.6rem;
+    line-height: 24px;
   }
   .skilllogo {
     width: 5rem;
@@ -1065,6 +1070,7 @@ footer {
 @media (min-width: 1050px) {
   .headerContent .tagline {
     font-size: 7rem;
+    line-height: 80px;
   }
   .btn {
     padding: 1.5rem 6.5rem;
@@ -1073,5 +1079,9 @@ footer {
     padding: 3rem;
     font-size: 1.8rem;
     line-height: 3.3rem;
+  }
+  .aboutMeText {
+    font-size: 1.8rem;
+    line-height: 27px;
   }
 }

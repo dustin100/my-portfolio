@@ -44,16 +44,16 @@
 
 @media (min-width: 750px) {
 	.headerContent .tagline {
-		line-height: 104px;
+		font-size: 6.5rem;
+		line-height: 70px;
+		margin-right: 4.2rem;
+		margin-left: 4.2rem;
 		span {
 			display: inline;
 		}
 		.wTwo {
 			display: block;
 		}
-		margin-right: 4.2rem;
-		margin-left: 4.2rem;
-		font-size: 5rem;
 	}
 	.headerContent .myName {
 		height: 40rem;
@@ -130,6 +130,8 @@
 		&Text {
 			margin-left: 2rem;
 			flex: 1;
+			font-size: 1.6rem;
+			line-height: 24px;
 		}
 	}
 	.skilllogo {
@@ -140,6 +142,7 @@
 @media (min-width: 1050px) {
 	.headerContent .tagline {
 		font-size: 7rem;
+		line-height: 80px;
 	}
 
 	.btn {
@@ -152,5 +155,10 @@
 			font-size: 1.8rem;
 			line-height: 3.3rem;
 		}
+	}
+
+	.aboutMeText {
+		font-size: 1.8rem;
+		line-height: 27px;
 	}
 }
