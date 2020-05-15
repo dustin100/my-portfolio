@@ -1053,6 +1053,8 @@ footer {
             flex: 1;
     height: auto;
     width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .aboutMeText {
     margin-left: 2rem;
