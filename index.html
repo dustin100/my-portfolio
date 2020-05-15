@@ -28,7 +28,7 @@
         <div id="particles-js"></div>
         <div class="headerContent wrapper">
             <nav class="navBar">
-                <div class="menuIcon" tabindex="0" aria-label=”Open the menu" aria-hidden=”true”>
+                <div class="menuIcon" tabindex="0" role="menu" aria-label=”Open the menu" aria-hidden=”true”>
                     <div class="line line-1"></div>
                     <div class="line line-2"></div>
                     <div class="line line-3"></div>
@@ -46,7 +46,8 @@
             <div>
                 <p class="tagline"><span>Frontend </span><span>Web </span> <span class="wTwo">Developer </span>
                     <span>being </span><span>creative </span><span class="wThree">through </span> <span>code </span></p>
-                <a href="./assets/Dustin_Kelly_Resume.pdf" download="Dustin_Kelly_Resume.pdf" class="btn">Download résumé</a>
+                <a href="./assets/Dustin_Kelly_Resume.pdf" download="Dustin_Kelly_Resume.pdf" class="btn">Download
+                    résumé</a>
             </div>
             <div class="headerContentSocial">
                 <ul>
@@ -251,22 +252,22 @@
 
                     <div class="myContactItem">
                         <label class="visuallyHidden" for="name">First Name</label>
-                        <input class="myContactInput" type="text" id="name" name="name" placeholder="Name">
+                        <input class="myContactInput" required type="text" id="name" name="name" placeholder="Name">
                     </div>
 
                     <div class="myContactItem">
                         <label class="visuallyHidden" for="email">Email</label>
-                        <input class="myContactInput" id="email" name="email" placeholder="Email">
+                        <input class="myContactInput" required type="email" id="email" name="email" placeholder="Email">
                     </div>
 
                     <div class="myContactItem">
                         <label class="visuallyHidden" for="subject">Subject</label>
-                        <input class="myContactInput" id="subject" name="subject" placeholder="Subject">
+                        <input class="myContactInput" required id="subject" name="subject" placeholder="Subject">
                     </div>
 
                     <div class="myContactItem">
                         <label class="visuallyHidden" for="msg">Message:</label>
-                        <textarea class="myContactInput" id="msg" name="user_message"
+                        <textarea class="myContactInput" required id="msg" name="user_message"
                             placeholder="Your Message"></textarea>
                     </div>
                     <button class="btn myContactBtn" type="submit">Send</button>
