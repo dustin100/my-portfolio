@@ -781,6 +781,10 @@ main h2 {
   margin-bottom: 2rem;
 }
 
+.aboutMe p {
+  margin-bottom: 2rem;
+}
+
 .skills {
   position: relative;
   border: 1px solid #9999ff;
@@ -931,6 +935,7 @@ footer {
   line-height: 2.2rem;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  font-family: "Quantico", sans-serif;
 }
 
 @media (min-width: 375px) {
@@ -1085,5 +1090,14 @@ footer {
   .aboutMeText {
     font-size: 1.8rem;
     line-height: 27px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  header {
+    height: 100%;
+  }
+  .headInfo {
+    margin-bottom: 5rem;
   }
 }
