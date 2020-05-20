@@ -69,15 +69,15 @@
 			'buttons content side';
 
 		&Title {
-			border-right: 1px solid $mainColor;
-			border-bottom: 1px solid $mainColor;
+			border-right: $borderStyle;
+			border-bottom: $borderStyle;
 			h3 {
 				font-size: 2.4rem;
 			}
 		}
 
 		&Side {
-			border-top: 1px solid $mainColor;
+			border-top: $borderStyle;
 			padding-top: 2rem;
 			width: 100%;
 			text-align: center;
@@ -88,11 +88,11 @@
 		}
 
 		&Body {
-			border-right: 1px solid $mainColor;
+			border-right: $borderStyle;
 		}
 
 		&Buttons {
-			border-right: 1px solid $mainColor;
+			border-right: $borderStyle;
 			justify-content: space-evenly;
 		}
 
@@ -125,7 +125,7 @@
 			flex: 1;
 			height: auto;
 			width: 100%;
-			object-fit: cover;
+			object-fit: contain;
 		}
 
 		&Text {
@@ -164,13 +164,8 @@
 	}
 }
 
-//  Landscape 
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-
+//  Landscape
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
 	header {
 		height: 100%;
 	}
@@ -178,5 +173,4 @@
 	.headInfo {
 		margin-bottom: 5rem;
 	}
-
 }

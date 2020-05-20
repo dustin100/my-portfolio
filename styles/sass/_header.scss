@@ -113,7 +113,7 @@ header {
 	background: #4d4e82;
 	transition: right 500ms ease-in-out;
 	z-index: 2;
-	border: 1px solid $mainColor;
+	border: $borderStyle;
 
 	&List {
 		display: flex;

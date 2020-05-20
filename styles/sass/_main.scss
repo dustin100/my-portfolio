@@ -9,7 +9,7 @@ main {
 		text-align: center;
 		letter-spacing: 0.09em;
 		text-transform: uppercase;
-		border: 1px solid $mainColor;
+		border: $borderStyle;
 		color: $accentTwo;
 		background: $darkColor;
 		display: inline;
@@ -25,7 +25,7 @@ main {
 	&:after {
 		content: '';
 		flex: 1 1;
-		border-bottom: 1px solid $mainColor;
+		border-bottom: $borderStyle;
 		margin: auto;
 	}
 }
