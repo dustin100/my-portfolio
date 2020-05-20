@@ -2,7 +2,7 @@
 	position: relative;
 	background: #1c1c28;
 	color: #fff;
-	border: 1px solid $mainColor;
+	border: $borderStyle;
 	margin-bottom: 3rem;
 	display: grid;
 	grid-template-columns: 2fr 60px;
@@ -62,7 +62,7 @@
 	}
 	&Copy {
 		grid-area: content;
-        border-top: 1px solid $mainColor;
+        border-top: $borderStyle;
 
 		p {
 			font-style: normal;
@@ -82,7 +82,7 @@
 		}
 
 		li {
-			border-bottom: 1px solid $mainColor;
+			border-bottom: $borderStyle;
 			padding-bottom: 1.5rem;
 			margin-bottom: 1.5rem;
 

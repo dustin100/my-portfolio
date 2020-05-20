@@ -10,7 +10,7 @@
 .myContact {
 	position: relative;
 	background: #1c1c28;
-	border: 1px solid $mainColor;
+	border: $borderStyle;
 	margin-bottom: 2rem;
 	max-width: 600px;
 
@@ -47,7 +47,7 @@
 
 	&Input {
 		display: block;
-		border: 1px solid $mainColor;
+		border: $borderStyle;
 		padding: 0.5rem;
 		background: $darkColor;
 		color: $lightColor;
@@ -70,7 +70,7 @@
 
 	&Social {
 		padding: 1.5rem;
-		border-top: 1px solid $mainColor;
+		border-top: $borderStyle;
 
 		ul {
 			display: flex;

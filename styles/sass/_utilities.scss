@@ -21,7 +21,7 @@
 	font-weight: bold;
 	letter-spacing: 0.09em;
 	text-transform: uppercase;
-	border: 1px solid $mainColor;
+	border: $borderStyle;
 	font-family: $headerFont;
 	cursor: pointer;
 	&:hover,

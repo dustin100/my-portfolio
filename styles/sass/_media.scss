@@ -69,15 +69,15 @@
 			'buttons content side';
 
 		&Title {
-			border-right: 1px solid $mainColor;
-			border-bottom: 1px solid $mainColor;
+			border-right: $borderStyle;
+			border-bottom: $borderStyle;
 			h3 {
 				font-size: 2.4rem;
 			}
 		}
 
 		&Side {
-			border-top: 1px solid $mainColor;
+			border-top: $borderStyle;
 			padding-top: 2rem;
 			width: 100%;
 			text-align: center;
@@ -88,11 +88,11 @@
 		}
 
 		&Body {
-			border-right: 1px solid $mainColor;
+			border-right: $borderStyle;
 		}
 
 		&Buttons {
-			border-right: 1px solid $mainColor;
+			border-right: $borderStyle;
 			justify-content: space-evenly;
 		}
 
