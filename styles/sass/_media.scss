@@ -125,7 +125,7 @@
 			flex: 1;
 			height: auto;
 			width: 100%;
-			object-fit: cover;
+			object-fit: contain;
 		}
 
 		&Text {
@@ -164,13 +164,8 @@
 	}
 }
 
-//  Landscape 
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-
+//  Landscape
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
 	header {
 		height: 100%;
 	}
@@ -178,5 +173,4 @@
 	.headInfo {
 		margin-bottom: 5rem;
 	}
-
 }
