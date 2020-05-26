@@ -6,6 +6,7 @@
 	margin-bottom: 3rem;
 	display: grid;
 	grid-template-columns: 2fr 60px;
+	border-radius: 2px;
 	grid-template-rows: auto auto 1fr auto;
 	grid-template-areas:
 		'title . '
@@ -30,6 +31,10 @@
 		border-left: 25px solid transparent;
 	}
 
+	&:last-child {
+		margin-bottom: 6rem;
+	}
+
 	&Title {
 		grid-area: title;
 		padding: 1.3rem 1rem 0.5rem 1rem;
@@ -42,6 +47,7 @@
 			line-height: 2.7rem;
 			letter-spacing: 0.09em;
 			text-transform: uppercase;
+			white-space: nowrap;
 		}
 	}
 	&Body {
@@ -53,7 +59,7 @@
 	&Buttons {
 		grid-area: buttons;
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		padding: 1.4rem 0rem 1.4rem 1.4rem;
 
 		button {
