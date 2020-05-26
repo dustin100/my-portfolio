@@ -381,6 +381,7 @@ p {
   border: 1px solid #9999ff;
   font-family: "Quantico", sans-serif;
   cursor: pointer;
+  border-radius: 2px;
 }
 
 .btn:hover, .btn:focus {
@@ -486,7 +487,7 @@ header {
 .line {
   width: 100%;
   height: 2px;
-  background: #fff;
+  background: #42ccaa;
   -webkit-transition: -webkit-transform 800ms;
   transition: -webkit-transform 800ms;
   transition: transform 800ms;
@@ -614,13 +615,14 @@ main h2 {
   background: #000;
   display: inline;
   padding: 0.5rem 6rem;
+  border-radius: 2px;
 }
 
 .boxHeadings {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 
 .boxHeadings:before, .boxHeadings:after {
@@ -633,7 +635,7 @@ main h2 {
 }
 
 .skilllogo {
-  width: 3rem;
+  width: 2.6rem;
 }
 
 .projectBox {
@@ -646,6 +648,7 @@ main h2 {
   display: grid;
   -ms-grid-columns: 2fr 60px;
       grid-template-columns: 2fr 60px;
+  border-radius: 2px;
   -ms-grid-rows: auto auto 1fr auto;
       grid-template-rows: auto auto 1fr auto;
       grid-template-areas: 'title . ' 'main side' 'buttons side' 'content content';
@@ -669,6 +672,10 @@ main h2 {
   border-left: 25px solid transparent;
 }
 
+.projectBox:last-child {
+  margin-bottom: 6rem;
+}
+
 .projectBoxTitle {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -684,6 +691,7 @@ main h2 {
   line-height: 2.7rem;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .projectBoxBody {
@@ -703,9 +711,9 @@ main h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 1.4rem 0rem 1.4rem 1.4rem;
 }
 
@@ -763,7 +771,7 @@ main h2 {
   font-size: 1.4rem;
   line-height: 2.2rem;
   letter-spacing: 0.01em;
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
 }
 
 .aboutMe span {
@@ -789,7 +797,7 @@ main h2 {
   position: relative;
   border: 1px solid #9999ff;
   padding: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
 }
 
 .skills h2 {
@@ -838,7 +846,7 @@ main h2 {
   position: relative;
   background: #1c1c28;
   border: 1px solid #9999ff;
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
   max-width: 600px;
 }
 

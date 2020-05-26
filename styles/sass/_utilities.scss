@@ -24,6 +24,7 @@
 	border: $borderStyle;
 	font-family: $headerFont;
 	cursor: pointer;
+	border-radius: 2px;
 	&:hover,
 	&:focus {
 		background: $accentOne;

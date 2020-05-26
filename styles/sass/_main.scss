@@ -1,6 +1,7 @@
 main {
 	background: $darkColor;
 
+
 	h2 {
 		font-style: normal;
 		font-weight: bold;
@@ -14,13 +15,14 @@ main {
 		background: $darkColor;
 		display: inline;
 		padding: 0.5rem 6rem;
+		border-radius: 2px;
 		
 	}
 }
 
 .boxHeadings {
 	display: flex;
-	margin-bottom: 4rem;
+	margin-bottom: 6rem;
 	&:before,
 	&:after {
 		content: '';
@@ -31,7 +33,7 @@ main {
 }
 
 .skilllogo {
-	width: 3rem;
+	width: 2.6rem;
 }
 
 
