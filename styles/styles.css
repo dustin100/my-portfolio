@@ -875,8 +875,8 @@ main h2 {
   line-height: 2.7rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding-top: 1rem;
-  padding-left: 1rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -963,7 +963,7 @@ footer {
     padding: 1.5rem 5.3rem;
   }
   .skilllogo {
-    width: 4rem;
+    width: 3rem;
   }
 }
 
@@ -982,7 +982,17 @@ footer {
     padding: 1.5rem 7.5rem;
   }
   .skilllogo {
-    width: 4rem;
+    width: 3rem;
+  }
+  .projectBoxCopy p,
+  .aboutMe p {
+    font-size: 1.7rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.02em;
+    padding: 3rem;
+  }
+  .aboutMe p {
+    padding: 0.2rem;
   }
 }
 
@@ -1006,16 +1016,15 @@ footer {
   .projectBox {
     -ms-grid-columns: 3fr 2fr 60px;
         grid-template-columns: 3fr 2fr 60px;
-    -ms-grid-rows: auto auto auto;
-        grid-template-rows: auto auto auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
         grid-template-areas: 'title . .' 'main content side' 'buttons content side';
   }
   .projectBoxTitle {
     border-right: 1px solid #9999ff;
-    border-bottom: 1px solid #9999ff;
   }
   .projectBoxTitle h3 {
-    font-size: 2.4rem;
+    font-size: 1.9rem;
   }
   .projectBoxSide {
     border-top: 1px solid #9999ff;
@@ -1026,17 +1035,23 @@ footer {
   .projectBoxSide ul {
     padding: 0 1rem 0 0;
   }
-  .projectBoxBody {
-    border-right: 1px solid #9999ff;
-  }
   .projectBoxButtons {
-    border-right: 1px solid #9999ff;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    padding: 1.4rem 0rem;
+    border-right: 1px solid #9999ff;
   }
   .projectBoxCopy p {
     font-size: 1.5rem;
+    padding-top: 1.4rem;
+  }
+  .projectBoxBody {
+    border-top: 1px solid #9999ff;
+    border-right: 1px solid #9999ff;
   }
   .btn {
     padding: 1.5rem 3.4rem;
@@ -1044,6 +1059,13 @@ footer {
   main h2 {
     width: 50rem;
     font-size: 1.5rem;
+  }
+  .aboutMeText {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .resume {
+    margin-top: 2rem;
   }
 }
 
@@ -1078,7 +1100,7 @@ footer {
     line-height: 24px;
   }
   .skilllogo {
-    width: 5rem;
+    width: 4rem;
   }
 }
 
@@ -1090,14 +1112,33 @@ footer {
   .btn {
     padding: 1.5rem 6.5rem;
   }
+  .boxHeadings {
+    margin-bottom: 8rem;
+  }
+  .projectBox {
+    margin-bottom: 4rem;
+  }
   .projectBoxCopy p {
-    padding: 3rem;
-    font-size: 1.8rem;
-    line-height: 3.3rem;
+    padding: 1.5rem 3rem;
+    font-size: 1.7rem;
+    line-height: 2.9rem;
+  }
+  .projectBoxTitle h3 {
+    font-size: 2.2rem !important;
   }
   .aboutMeText {
     font-size: 1.8rem;
     line-height: 27px;
+  }
+  .skills {
+    padding: 4rem 0;
+  }
+  .skillsIcon {
+    -ms-grid-rows: 6rem;
+        grid-template-rows: 6rem;
+  }
+  .myContactSocial {
+    padding: 2rem 1.5rem;
   }
 }
 
