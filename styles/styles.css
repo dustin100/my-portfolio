@@ -1088,8 +1088,10 @@ footer {
             flex: 1;
     height: auto;
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    padding-top: 1rem;
   }
   .aboutMeText {
     margin-left: 2rem;
