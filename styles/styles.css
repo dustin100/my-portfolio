@@ -691,7 +691,6 @@ main h2 {
   line-height: 2.7rem;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  white-space: nowrap;
 }
 
 .projectBoxBody {
@@ -715,6 +714,8 @@ main h2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1.4rem 0rem 1.4rem 1.4rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .projectBoxButtons button {
