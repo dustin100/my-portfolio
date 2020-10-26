@@ -756,6 +756,7 @@ main h2 {
   border-bottom: 1px solid #9999ff;
   padding-bottom: 1.5rem;
   margin-bottom: 1.5rem;
+  font-size: 3rem;
 }
 
 .projectBoxSide li:last-child {
@@ -826,8 +827,30 @@ main h2 {
   margin-top: 3rem;
 }
 
-.skills img {
+.skills li {
+  text-decoration: none;
+  height: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.skills li span {
+  color: #fff;
+  font-family: 'Quantico', sans-serif;
+  font-size: 0.9rem;
+  padding: 5px 0 10px 0;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+.skills i {
   width: 100%;
+  color: #fff;
+  font-size: 5rem;
 }
 
 .formWrap {
@@ -1035,6 +1058,9 @@ footer {
   }
   .projectBoxSide ul {
     padding: 0 1rem 0 0;
+  }
+  .projectBoxSide li {
+    font-size: 3.5rem;
   }
   .projectBoxButtons {
     -webkit-box-pack: space-evenly;
