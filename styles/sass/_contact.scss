@@ -14,20 +14,22 @@
 	margin-bottom: 6rem;
 	max-width: 600px;
 
-		&:before {
-	position:absolute; 
-	content:'';
-	right:-1px; top:-1px; 
-    border-top: 30px solid $mainColor;
-    border-left: 30px solid transparent;
-}
-:after {
-	position:absolute; 
-	 content:'';
-	 right:-2px; top:-2px;
-    border-top: 30px solid #000;
-    border-left: 30px solid transparent;
-}
+	&:before {
+		position: absolute;
+		content: '';
+		right: -1px;
+		top: -1px;
+		border-top: 30px solid $mainColor;
+		border-left: 30px solid transparent;
+	}
+	:after {
+		position: absolute;
+		content: '';
+		right: -2px;
+		top: -2px;
+		border-top: 30px solid #000;
+		border-left: 30px solid transparent;
+	}
 
 	h3 {
 		color: $accentTwo;

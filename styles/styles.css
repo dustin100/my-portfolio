@@ -428,7 +428,7 @@ header {
 }
 
 .headerContent .tagline span {
-  display: block;
+  display: block !important;
 }
 
 .headerContentSocial {
@@ -857,7 +857,8 @@ main h2 {
   margin-top: 5px;
 }
 
-.skills i {
+.skills i,
+.skills .fa-shopify {
   width: 100%;
   color: #fff;
   font-size: 5rem;
