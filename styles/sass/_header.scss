@@ -1,4 +1,3 @@
-
 header {
 	height: 100vh;
 	width: 100%;
@@ -61,6 +60,16 @@ header {
 			&:focus {
 				color: $accentOne;
 			}
+		}
+	}
+
+	.btn {
+		background: $accentOne;
+		color: $darkColor;
+		&:hover,
+		&:focus {
+			background: $darkColor;
+			color: $accentOne;
 		}
 	}
 }
