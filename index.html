@@ -8,14 +8,6 @@
     <meta name="description"
         content="Dustin Kelly is a Front End Developer Living in Toronto Ontario. With experience building responsive, accessible sites using JavaScript, jQuery, Firebase and React">
 
-    <!-- Font Awesome -->
-    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css'
-        integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' crossorigin='anonymous' />
-
-        <!-- Devicon -->
-        <link rel="stylesheet"
-            href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Open+Sans&family=Quantico:wght@400;700&display=swap"
@@ -28,7 +20,6 @@
 
 <body>
     <header>
-
         <div id="particles-js"></div>
         <div class="headerContent wrapper">
             <nav class="navBar">
@@ -46,11 +37,11 @@
             </nav>
 
 
-            <img class="myName" src="./img/DustinKelly.png" alt="Dustin Kelly">
+            <img class="myName" src="./img/DustinKelly.png" width="47" height="350" alt="Dustin Kelly">
             <div class="headInfo">
-                <h1 class="tagline"><span>Front End </span> <span class="wTwo">Developer </span></h1>
-                <p class="tagline">
-                    <span>being </span><span>creative </span><span class="wThree">through </span> <span>code </span></p>
+                <h1 class="tagline"><span>Dustin Kelly</span><span>Front End </span> <span>Developer </span></h1>
+                <!-- <p class="tagline">
+                    <span>being </span><span>creative </span><span class="wThree">through </span> <span>code </span></p> -->
                 <a href="./assets/Dustin_Kelly_Resume.pdf" download="Dustin_Kelly_Resume.pdf"
                     class="btn resume">Download
                     résumé</a>
@@ -60,14 +51,12 @@
                     <li><a href="https://www.linkedin.com/in/dustin-m-kelly/" rel="noreferrer" target="_blank"> <i
                                 class="fab fa-linkedin"></i></a>
                     </li>
-
+                    
                     <li><a href="mailto:dk@dustinkelly.dev" rel="noreferrer" target="_blank"><i class="far fa-envelope">
                             </i></a> </li>
                 </ul>
             </div>
-
         </div>
-
     </header>
 
     <main>
@@ -77,14 +66,38 @@
         </div>
 
         <section class="project wrapper">
-
+             <!-- Project Shopify -->
+             <div class="projectBox">
+                <div class="projectBoxTitle">
+                    <h3>Kurakagei Shopify Theme</h3>
+                </div>
+                <div class="projectBoxBody">
+                    <img src="./img/kurakagei.jpg" width="615" height="367" loading="lazy" alt="kurakagei screenshot">
+                </div>
+                <div class="projectBoxSide">
+                    <ul>
+                        <li class="skilllogo"> <i class="fab fa-shopify"></i></li>
+                        <li class="skilllogo"><i class="devicon-javascript-plain"></i></li>
+                        <li class="skilllogo"> <i class="devicon-html5-plain"></i></li>
+                        <li class="skilllogo"> <i class="devicon-css3-plain"></i></li>
+                    </ul>
+                </div>
+                <div class="projectBoxButtons">
+                    <a href="https://kurakagei.com/" rel="noreferrer" target="_blank" class="btn" aria-label="Visit kurakagei.com">Visit Site</a>
+                    <!-- <a href="https://github.com/dustin100/freetime" target="_blank" class="btn">View on Github</a> -->
+                </div>
+                <div class="projectBoxCopy">
+                    <p>Developed a fully customized Shopify site for local streetwear brand Kurakagei using Debut as the base and the client’s designs in Figma. 
+                    </p>
+                </div>
+            </div>
             <!-- Project 4 -->
             <div class="projectBox">
                 <div class="projectBoxTitle">
                     <h3>Free Time</h3>
                 </div>
                 <div class="projectBoxBody">
-                    <img src="./img/free-time2.jpg" alt="free time app screenshot">
+                    <img src="./img/free-time2.jpg" width="615" height="367" loading="lazy" alt="free time app screenshot">
                 </div>
                 <div class="projectBoxSide">
                     <ul>
@@ -92,30 +105,29 @@
                         <li class="skilllogo"> <i class="devicon-react-original"></i></li>
                         <li class="skilllogo"><i class="devicon-nodejs-plain"></i></li>
                         <li class="skilllogo"> <i class="devicon-express-original"></i></li>
-                        
                         <li class="skilllogo"><i class="devicon-javascript-plain"></i></li>
                         <li class="skilllogo"><i class="devicon-mongodb-plain"></i></li>
                         
                     </ul>
                 </div>
                 <div class="projectBoxButtons">
-                    <a href="https://still-river-08962.herokuapp.com/" target="_blank" class="btn">Visit Site</a>
-                    <a href="https://github.com/dustin100/freetime" target="_blank" class="btn">View on Github</a>
+                    <a href="https://still-river-08962.herokuapp.com/" rel="noreferrer" target="_blank" class="btn" aria-label="Visit Free Time">Visit Site</a>
+                    <a href="https://github.com/dustin100/freetime" rel="noreferrer" target="_blank" class="btn" aria-label="Visit Free Time Github Repo">View on Github</a>
                 </div>
                 <div class="projectBoxCopy">
-                    <p>A MERN stack application that utilizes Redux. Using three APIs, a user can search for movies, books and video games and save it to
-                        their list (where they can access it later). Complete with login functionality and Material-UI. 
+                    <p>A MERN stack application that utilizes Redux. Using three APIs, a user can search for movies, books and video games and save it to their list (where they can access it later). Complete with login functionality and Material-UI. 
                     </p>
+                    <p class="cors-fix"><span>Before testing the site:</span> To prevent cors errors you need to visit: <a href="http://cors-anywhere.herokuapp.com/corsdemo"> http://cors-anywhere.herokuapp.com/corsdemo</a> Then click on the "Request temporary access to the demo server" button.</p>
                 </div>
             </div>
 
-            <!-- Project One -->
+            <!-- Project Mario Game -->
             <div class="projectBox">
                 <div class="projectBoxTitle">
                     <h3>Mario Memory Game</h3>
                 </div>
                 <div class="projectBoxBody">
-                    <img src="./img/mario-memory.jpg" alt="mario card memory match game ">
+                    <img src="./img/mario-memory.jpg" width="615" height="367" loading="lazy" alt="mario card memory match game ">
                 </div>
                 <div class="projectBoxSide">
                     <ul>
@@ -126,8 +138,8 @@
                     </ul>
                 </div>
                 <div class="projectBoxButtons">
-                    <a href="https://dustin100.github.io/dustin-kelly-project-three/" target="_blank" class="btn">Visit Site</a>
-                    <a href="https://github.com/dustin100/dustin-kelly-project-three" target="_blank" class="btn">View on Github</a>
+                    <a href="https://dustin100.github.io/dustin-kelly-project-three/" rel="noreferrer" target="_blank" class="btn" aria-label="Visit Mario Memory Game">Visit Site</a>
+                    <a href="https://github.com/dustin100/dustin-kelly-project-three" rel="noreferrer" target="_blank" class="btn" aria-label="Visit Mario Memory Game Github Repo">View on Github</a>
                 </div>
                 <div class="projectBoxCopy">
                     <p>I recreated the Mario 3 card matching game and added a few extra features such as difficulty
@@ -138,18 +150,13 @@
             </div>
 
 
-
-
-
-
-
-            <!-- Project Two -->
+            <!-- Project Gif The News -->
             <div class="projectBox">
                 <div class="projectBoxTitle">
                     <h3>Gif The News</h3>
                 </div>
                 <div class="projectBoxBody">
-                    <img src="./img/gif-the-news.jpg" alt="news and gif mashup app">
+                    <img src="./img/gif-the-news.jpg" width="615" height="367" loading="lazy" alt="news and gif mashup app">
                 </div>
                 <div class="projectBoxSide">
                     <ul>
@@ -160,8 +167,8 @@
                     </ul>
                 </div>
                 <div class="projectBoxButtons">
-                    <a href="https://dustin100.github.io/gifTheNews" target="_blank" class="btn">Visit Site</a>
-                    <a href="https://github.com/dustin100/gifTheNews" target="_blank" class="btn">View on Github</a>
+                    <a href="https://dustin100.github.io/gifTheNews" rel="noreferrer" target="_blank" class="btn" aria-label="Visit Gif The News">Visit Site</a>
+                    <a href="https://github.com/dustin100/gifTheNews" rel="noreferrer" target="_blank" class="btn" aria-label="Visit Gif The News Github Repo">View on Github</a>
                 </div>
                 <div class="projectBoxCopy">
                     <p>A fun mash-up of gifs and news articles. Built, in React this app uses the NewsAPI and the Giphy
@@ -169,13 +176,13 @@
                         top 20 results from a user’s query.</p>
                 </div>
             </div>
-            <!-- Project 3 -->
+            <!-- Project Eggs -->
             <div class="projectBox">
                 <div class="projectBoxTitle">
                     <h3>Celebrity Eggs</h3>
                 </div>
                 <div class="projectBoxBody">
-                    <img src="./img/celebrityeggs.jpg" alt="celebrity eggs screenshot">
+                    <img src="./img/celebrityeggs.jpg" width="615" height="367" loading="lazy" alt="celebrity eggs screenshot">
                 </div>
                 <div class="projectBoxSide">
                     <ul>
@@ -185,8 +192,8 @@
                     </ul>
                 </div>
                 <div class="projectBoxButtons">
-                    <a href="https://celebrityeggs.com" target="_blank" class="btn">Visit Site</a>
-                    <a href="https://github.com/dustin100/celebrity-eggs" target="_blank" class="btn">View on Github</a>
+                    <a href="https://celebrityeggs.com" rel="noreferrer" target="_blank" class="btn" aria-label="Visit Celebrity Eggs">Visit Site</a>
+                    <a href="https://github.com/dustin100/celebrity-eggs" rel="noreferrer" target="_blank" class="btn" aria-label="Visit Celebrity Eggs Github Repo">View on Github</a>
                 </div>
                 <div class="projectBoxCopy">
                     <p>A weird project I took on just to make a few friends laugh. This was built using Javascript so
@@ -197,29 +204,29 @@
                 </div>
             </div>
 
-            
 
-            <!-- Project 5 -->
+            <!-- Project Ribo -->
             <div class="projectBox">
                 <div class="projectBoxTitle">
-                    <h3>Creative Agency</h3>
+                    <h3>RIBO Micro Site</h3>
                 </div>
                 <div class="projectBoxBody">
-                    <img src="./img/creative-agency.jpg" alt="Creative Agency web design">
+                    <img src="./img/riboexams.jpg" width="615" height="367" loading="lazy" alt="RIBO Exams Screenshot">
                 </div>
                 <div class="projectBoxSide">
                     <ul>
+                        <li class="skilllogo">  <i class="devicon-wordpress-plain"></i></li>
                         <li class="skilllogo"> <i class="devicon-html5-plain"></i></li>
-                        <li class="skilllogo"> <i class="devicon-css3-plain"></i></li>
+                        <li class="skilllogo"> <i class="devicon-sass-original"></i></li>
+                        <li class="skilllogo"> <i class="devicon-php-plain"></i></li>
                     </ul>
                 </div>
                 <div class="projectBoxButtons">
-                    <a href="https://dustin100.github.io/dustin-kelly-project-two/" target="_blank" class="btn">Visit Site</a>
-                    <a href="https://github.com/dustin100/dustin-kelly-project-two" target="_blank" class="btn">View on Github</a>
+                    <a href="https://riboexams.ibao.org/" rel="noreferrer" target="_blank" class="btn" aria-label="Visit RIBO Exams">Visit Site</a>
+                    <!-- <a href="https://github.com/dustin100/dustin-kelly-project-two" rel="noreferrer" target="_blank" class="btn">View on Github</a> -->
                 </div>
                 <div class="projectBoxCopy">
-                    <p>A multi-page PSD conversion from a client brief and design that is fully responsive using HTML5,
-                        CSS, Flexbox, and Grid</p>
+                    <p>A multi-page micro site built in WordPress that required a quick turnaround(one week). From a client brief and design that is fully responsive using PHP, ACF, HTML5, and SASS</p>
                 </div>
             </div>
         </section>
@@ -229,9 +236,9 @@
             <h2>About Me</h2>
         </div>
         <section class="aboutMe wrapper">
-            <img src="./img/dustinkellyphoto.jpg" alt="dustin kelly in suit">
+            <img src="./img/dustin-headshot.jpg" width="540" height="289" loading= "lazy" alt="dustin kelly in suit">
             <div class="aboutMeText">
-                <p><span>Hello</span>,my name is Dustin. I’m a Front End Developer living in Toronto experienced in
+                <p><span>Hello</span>,my name is Dustin. I’m a Front End Developer in Toronto experienced in
                     building responsive, accessible websites and web applications using JavaScript, jQuery, Firebase and
                     React. As a recent Juno Bootcamp graduate, I’m looking to
                     expand my portfolio and collaborate on something new.</p>
@@ -245,8 +252,7 @@
                 <p>I’m a self-motivated person with a passion for learning and a keen desire to improve my skills and
                     immerse myself in
                     everything to do with web development. Being a Front End Developer has been a dream of mine for a
-                    long time, and I can't
-                    wait to work with like-minded people who share my interest and enthusiasm for technology.</p>
+                    long time, and I am excited to work with like-minded people who share my interest and enthusiasm for technology.</p>
             </div>
         </section>
 
@@ -270,19 +276,15 @@
                 <li><i class="devicon-github-plain"></i> <span>github</span></li>
                 <li><i class="devicon-bootstrap-plain"></i><span>Bootstrap</span></li>
                 <li><i class="devicon-git-plain"></i> <span>Git</span></li>
+                <li><i class="devicon-wordpress-plain"></i> <span>Wordpress</span></li>
+                <li><i class="fab fa-shopify"></i></i> <span>Shopify</span></li>
             </ul>
-            
-            
-
         </section>
 
         <section id="contact" class="myContact wrapper">
             <h3>Contact</h3>
-
             <div class="formWrap">
-
                 <form class="myForm" action="" data-netlify="true" method="POST">
-
                     <div class="myContactItem">
                         <label class="visuallyHidden" for="name">First Name</label>
                         <input class="myContactInput" required type="text" id="name" name="name" placeholder="Name">
@@ -332,6 +334,12 @@
 
     <footer>Coded by Dustin Kelly & Designed by Sandra Kang</footer>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- Font Awesome -->
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+
+    <!-- Devicon -->
+    <link  rel="stylesheet"
+        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
     <script src="./js/scripts.js"></script>
 </body>

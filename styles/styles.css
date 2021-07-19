@@ -372,7 +372,7 @@ p {
   border: none;
   background: #000;
   color: #ffb800;
-  padding: 1.2rem .4rem;
+  padding: 1.2rem 0.4rem;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
@@ -428,7 +428,7 @@ header {
 }
 
 .headerContent .tagline span {
-  display: block;
+  display: block !important;
 }
 
 .headerContentSocial {
@@ -458,6 +458,16 @@ header {
 }
 
 .headerContentSocial a:hover, .headerContentSocial a:focus {
+  color: #ffb800;
+}
+
+.headerContent .btn {
+  background: #ffb800;
+  color: #000;
+}
+
+.headerContent .btn:hover, .headerContent .btn:focus {
+  background: #000;
   color: #ffb800;
 }
 
@@ -701,6 +711,7 @@ main h2 {
 
 .projectBoxBody img {
   width: 100%;
+  height: auto;
 }
 
 .projectBoxButtons {
@@ -737,6 +748,21 @@ main h2 {
   line-height: 2.2rem;
   letter-spacing: 0.01em;
   padding: 2rem;
+}
+
+.projectBoxCopy .cors-fix {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.projectBoxCopy .cors-fix span {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: red;
+}
+
+.projectBoxCopy .cors-fix a {
+  color: #ffb800;
 }
 
 .projectBoxSide {
@@ -847,7 +873,8 @@ main h2 {
   margin-top: 5px;
 }
 
-.skills i {
+.skills i,
+.skills .fa-shopify {
   width: 100%;
   color: #fff;
   font-size: 5rem;
